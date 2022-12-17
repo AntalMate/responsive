@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .menu a {
+    background-color: #7a7a7a;
+    padding: 1vh;
+    margin-top: 1vh;
+    display: block;
+    width: 100%;
+    color: white;
+
+  }
+  
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 7vh;
+    color: #7a7a7a;
+  }
+  
+  .right {
+    background-color: #7a7a7a;
+    float: left;
+    width: 20%;
+    padding: 5vh;
+    margin-top: 1vh;
+    text-align: center;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+
+
+
+  
+  div.menu a:hover:not(.active) {
+    background-color: #45beff;
+  }
+
+  .kollazskep {
+    width: 20vh;
+    clear: left;
+  }
+
+  .header {
+    background-color:#7a7a7a;
+    padding: 2vh;
+    text-align: center;
+    color: white;
+    
+  }
+
+  .footer {
+    background-color:#7a7a7a;
+    text-align:center;
+    padding: 3vh;
+    margin-top: 1vh;
+    position: sticky;
+    top: 100%;
+    color: white;
+    
+  }
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    background-color: beige;
+    min-height: 100vh;
+    margin: auto;
+    font-size: 1vw;
+  }
+
+  .menu ul {
+    list-style-type: none;
+  }
+
+  .pizza {
+    width: 20vw;
+    text-align: center;
+    margin-top: 1vh
+  }
+
+  table,tr,th,td
+{
+    border: 0.3vh solid rgb(56, 56, 56);
+}
+
+.mezo{
+    font-size: 1vw;
+}
+
+select {
+    font-size: 1vw;
+}
+
+textarea {
+    font-size: 1vw;
+}
+
+.karika {
+    height: 2vh;
+    width: 1vw;
+}
+
+.urlapgomb {
+    height: 5vh;
+    width: 7vw;
+    margin: 1vh;
+    font-size: 1vw;
+}
+
+ol,ul {
+    list-style-position: outside;
+}
+
+div.evszakok {
+    float: left;
+    transition: 0.5s;
+    text-align: center;
+    font-size: larger;
+    margin: 1vw;
+  } 
+  
+  div.evszakok img {
+    width: 10vw;
+    border: 0.3vh solid black;
+    border-radius: 7%;
+  
+  }
+  
+  div.evszakok:hover {
+    transform: scale(1.3);
+  }

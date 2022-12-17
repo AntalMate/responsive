@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antal Máté oldala | Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <div class="header">
+      <h1>Antal Máté</h1>
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        
+        <a href="index.html">FŐOLDAL</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="tablazat.html">Órarend</a>
+        <a style="background-color:#45beff ;" href="urlap.html">Pizzarendelés</a>
+        <a href="listak.html">Listák</a>
+        <a href="div.html">Évszakok</a>
+        
+      </div>
+
+      <div class="main">
+        <h2>Pizzarendelés</h2>
+        <h3>Töltse ki az adatokat!</h3>
+        <form>
+        
+             <p>Neve:</p>
+                <input class="mezo" type="text">
+            
+            <p>Telefonszáma:</p>
+                <input class="mezo" type="number">
+            
+            <p>Címe:</p>
+            <input class="mezo" type="text" name="Címe" id="">
+    
+            <p>Pizza kívánt mérete:</p>
+                <input class="karika" type="radio" name="gender">Kicsi
+                <input class="karika" type="radio" name="gender">Közepes
+                <input class="karika" type="radio" name="gender">Nagy
+            
+            <p>Pizza feltétei:</p>
+                <select>
+                    <option>---Válasszon!---</option>
+                    <option>Négysajtos</option>
+                    <option>Szalámis</option>
+                    <option>Sonkás</option>
+                </select>   
+    
+            <p>Extra feltétek:</p>
+                <input class="karika" type="radio" name="gender">Bacon
+                <input class="karika" type="radio" name="gender">Kukorica 
+                <input class="karika" type="radio" name="gender">Extra sajt
+    
+            <p>Egyéb üzenet a futárnak:</p>
+                <textarea cols=40 rows=5></textarea>
+                <br>
+            <input class="urlapgomb" type='reset'>
+                <br>
+            <input class="urlapgomb" type='submit'>
+    
+        </form>
+    
+      </div>
+    
+      <div class="right">
+        <h2>Rólam</h2>
+        <img class="kollazskep" src="img/amkollazs.jpg" alt="Kollázsképem" title="Kollázsképem">
+        <p>Antal Máté vagyok, szeretem a tejet és a kakaót is. Itt látható a kollázsképem.</p>
+      </div>
+    </div>
+    
+    <div class="footer">antalm@kkszki.hu</div>
+
+</body>
+    
+</html>
