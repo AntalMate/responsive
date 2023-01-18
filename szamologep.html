@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antal Máté oldala | Számológép</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <div class="header">
+      <h1>Antal Máté</h1>
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        
+        <a href="index.html">FŐOLDAL</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="tablazat.html">Órarend</a>
+        <a href="urlap.html">Pizzarendelés</a>
+        <a href="listak.html">Listák</a>
+        <a href="div.html">Évszakok</a>
+        <a style="background-color:#45beff ;" href="szamologep.html">Számológép</a>
+        
+      </div>
+
+      <div class="main">
+        <fieldset id="field">
+            <legend id="szamologep">Egyszerű számológép</legend>
+            <form action="javasript:void(0)">
+                <input class="mezo" type="number" name="szam" id="a" placeholder="Szám 1"> .
+                <input class="mezo" type="number" name="szam" id="b" placeholder="Szám 2"> =
+                <input class="mezo" type="text" name="szam" id="c" readonly placeholder="Eredmény">
+                <br><br>
+                <input id="muvelet" class="urlapgomb" type="button" value="+" onclick="ad()">
+                <input id="muvelet" class="urlapgomb" type="button" value="-" onclick="kiv()">
+                <input id="muvelet" class="urlapgomb" type="button" value="*" onclick="szor()">
+                <input id="muvelet" class="urlapgomb" type="button" value="/" onclick="oszt()">
+                <input id="muvelet" class="urlapgomb" type="reset" value="Törlés" onclick="del()">
+            </form>
+        </fieldset>
+      </div>
+    
+      <div class="right">
+        <h2>Rólam</h2>
+        <img class="kollazskep" src="img/amkollazs.jpg" alt="Kollázsképem" title="Kollázsképem">
+        <p>Antal Máté vagyok, szeretem a tejet és a kakaót is. Itt látható a kollázsképem.</p>
+      </div>
+    </div>
+    
+    <div class="footer">antalm@kkszki.hu</div>
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+            document.getElementById("field").style.backgroundColor = "#efe0cd"; 
+        }
+        function kiv() {
+            c.value = Number(a.value) - Number(b.value)
+            document.getElementById("field").style.backgroundColor = "#efe0cd"; 
+        }
+        function szor() {
+            c.value = Number(a.value) * Number(b.value)
+            document.getElementById("field").style.backgroundColor = "#efe0cd"; 
+        }
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+            document.getElementById("field").style.backgroundColor = "#efe0cd"; 
+        }
+        function del() {
+            document.getElementById("field").style.backgroundColor = "#dcdcc6"; 
+        }
+    </script>
+</body>
+
+</html>
