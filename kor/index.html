@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="javasript:void(0)">
+        <input type="button" value="Csere" onclick="swap()">
+        <br>
+        <img src="kor.png" id="csere" alt="Kör vagy háromszög">
+    </form>
+    <script>
+        var szam=1;
+        function swap() {
+            if (szam == 1) {
+                document.getElementById("csere").src="hszog.png";
+                szam = 2;
+            }
+            else {
+                document.getElementById("csere").src="kor.png";
+                szam = 1;
+            }
+        }
+    </script>
+</body>
+</html>
