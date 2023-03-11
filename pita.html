@@ -63,20 +63,20 @@
 
     <script>
         function pita(){
-            var aoldal = parseFloat(document.getElementById("aoldal").value);
-			var boldal = parseFloat(document.getElementById("boldal").value);
-			var coldal = parseFloat(document.getElementById("coldal").value);
+            	var aoldal1 = parseFloat(document.getElementById("aoldal").value);
+		var boldal = parseFloat(document.getElementById("boldal").value);
+		var coldal = parseFloat(document.getElementById("coldal").value);
 
             if (isNaN(coldal)) {
-				coldal = Math.sqrt(Math.pow(aoldal, 2) + Math.pow(boldal, 2));
+				coldal = Math.sqrt(Math.pow(aoldal1, 2) + Math.pow(boldal, 2));
 				document.getElementById("coldal").value = coldal;
             }
-            else if (isNaN(aoldal)) {
+            else if (isNaN(aoldal1)) {
 				aoldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(boldal, 2));
-				document.getElementById("aoldal").value = aoldal;
+				document.getElementById("aoldal").value = aoldal1;
             }
             else if (isNaN(boldal)) {
-				boldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(aoldal, 2));
+				boldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(aoldal1, 2));
 				document.getElementById("boldal").value = boldal;
             }
         }
