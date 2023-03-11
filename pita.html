@@ -63,21 +63,21 @@
 
     <script>
         function pita(){
-            	var aoldal1 = parseFloat(document.getElementById("aoldal").value);
-		var boldal = parseFloat(document.getElementById("boldal").value);
-		var coldal = parseFloat(document.getElementById("coldal").value);
+            var aoldal1 = parseFloat(document.getElementById("aoldal").value);
+			var boldal1 = parseFloat(document.getElementById("boldal").value);
+			var coldal1 = parseFloat(document.getElementById("coldal").value);
 
-            if (isNaN(coldal)) {
-				coldal = Math.sqrt(Math.pow(aoldal1, 2) + Math.pow(boldal, 2));
-				document.getElementById("coldal").value = coldal;
+            if (isNaN(coldal1)) {
+				coldal1 = Math.sqrt(Math.pow(aoldal1, 2) + Math.pow(boldal1, 2));
+				document.getElementById("coldal").value = coldal1;
             }
             else if (isNaN(aoldal1)) {
-				aoldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(boldal, 2));
+				aoldal1 = Math.sqrt(Math.pow(coldal1, 2) - Math.pow(boldal1, 2));
 				document.getElementById("aoldal").value = aoldal1;
             }
-            else if (isNaN(boldal)) {
-				boldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(aoldal1, 2));
-				document.getElementById("boldal").value = boldal;
+            else if (isNaN(boldal1)) {
+				boldal1 = Math.sqrt(Math.pow(coldal1, 2) - Math.pow(aoldal1, 2));
+				document.getElementById("boldal").value = boldal1;
             }
         }
     </script>
