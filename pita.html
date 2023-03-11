@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antal Máté oldala | Főoldal</title>
+    <title>Antal Máté oldala | Pitagorasz</title>
     <link rel="stylesheet" href="style.css">
 
     
@@ -26,29 +26,32 @@
     <div style="overflow:auto">
       <div class="menu">
         
-        <a style="background-color:#45beff ;" href="index.html">FŐOLDAL</a>
+        <a href="index.html">FŐOLDAL</a>
         <a href="keplink.html">Képlink</a>
         <a href="tablazat.html">Órarend</a>
         <a href="urlap.html">Pizzarendelés</a>
         <a href="listak.html">Listák</a>
         <a href="div.html">Évszakok</a>
         <a href="szamologep.html">Számológép</a>
-        <a href="pita.html">Pitagorasz</a>
+        <a style="background-color:#45beff ;" href="pita.html">Pitagorasz</a>
         
       </div>
 
       <div class="main">
-        <h2>Főoldal</h2>
-        <br>
-        <h1>Antal Máté</h1>
-        <h2>Antal Máté</h2>
-        <h3>Antal Máté</h3>
-        <h4>Antal Máté</h4>
-        <h5>Antal Máté</h5>
-        <h6>Antal Máté</h6>
-        <p>A szavak lehetnek: <i>dőltek</i> <b>félkövérek</b> <u>aláhúzottak</u>.</p>
-      </div>
-    
+        <h1>Pitagorasz tétel</h1>
+        <img src="img/pita.png" alt="Háromszög" title="Háromszög">
+        <form action="javascript:void(0)">
+            <h4>A oldal:</h4><input type="number" placeholder="A oldal" class="mezo" id="aoldal">
+            <h4>B oldal</h4><input type="number" placeholder="B oldal" class="mezo" id="boldal">
+            <h4>C oldal</h4><input type="number" placeholder="C oldal" class="mezo" id="coldal">
+            <br>
+            <input class="urlapgomb" value="Számol" type="button" onclick="pita()">  
+            <input class="urlapgomb" value="Törlés" type="reset">
+
+        </form>
+        
+      </div>  
+
       <div class="right">
         <h2>Rólam</h2>
         <img class="kollazskep" src="img/amkollazs.jpg" alt="Kollázsképem" title="Kollázsképem">
@@ -57,6 +60,27 @@
     </div>
     
     <div class="footer">antalm@kkszki.hu</div>
+
+    <script>
+        function pita(){
+            var aoldal = parseFloat(document.getElementById("aoldal").value);
+			var boldal = parseFloat(document.getElementById("boldal").value);
+			var coldal = parseFloat(document.getElementById("coldal").value);
+
+            if (isNaN(coldal)) {
+				coldal = Math.sqrt(Math.pow(aoldal, 2) + Math.pow(boldal, 2));
+				document.getElementById("coldal").value = coldal;
+            }
+            else if (isNaN(aoldal)) {
+				aoldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(boldal, 2));
+				document.getElementById("aoldal").value = aoldal;
+            }
+            else if (isNaN(boldal)) {
+				boldal = Math.sqrt(Math.pow(coldal, 2) - Math.pow(aoldal, 2));
+				document.getElementById("boldal").value = boldal;
+            }
+        }
+    </script>
 
 </body>
     
